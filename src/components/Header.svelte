@@ -1,20 +1,24 @@
-<script>
-
-</script>
-
-<header class="header">
-    <nav>
-        <a href="/">Home</a>
-    </nav>
-</header>
-
 <style>
-    h1 {
-        color: #000;
-        font-size: 70px;
-    }
+  header {
+    background: #f7f7f7;
+    padding: 1.5rem;
+  }
 
-    .header {
-        max-width: 800px;
-    }
+  h1 {
+    text-align: center;
+  }
+
+  img.logo {
+    max-width: 180px;
+  }
 </style>
+
+<header>
+  <h1>
+    <img class="logo" src="/images/poll_ninja_logo.svg" alt="poll ninja logo" />
+  </h1>
+
+  <nav>
+    <a href="/">Home</a>
+  </nav>
+</header>
