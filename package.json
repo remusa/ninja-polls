@@ -3,12 +3,13 @@
   "private": true,
   "scripts": {
     "dev": "svelvet",
-    "build": "NODE_ENV=production svelvet"
+    "build": "cross-env NODE_ENV=production svelvet"
   },
   "dependencies": {
     "svelte": "^3.7.1"
   },
   "devDependencies": {
+    "cross-env": "^7.0.2",
     "svelvet": "^0.4.0"
   }
 }
