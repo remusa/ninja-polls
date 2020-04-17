@@ -34,7 +34,7 @@
 
 <div class="tabs">
   <ul>
-    {#each tabs as tab}
+    {#each tabs as tab (tab)}
       <li on:click={() => dispatch('changeTab', tab)}>
         <div class:active={tab === activeTab}>{tab}</div>
       </li>
