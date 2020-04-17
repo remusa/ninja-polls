@@ -1,6 +1,12 @@
 <script>
   import Header from "./components/Header";
   import Footer from "/components/Footer";
+  import Tabs from "/shared/Tabs";
+
+  let tabs = ["Current Polls", "Add New Poll"];
+  let activeTab = tabs[0];
+
+  const changeTab = e => (activeTab = e.detail);
 </script>
 
 <style>
@@ -13,13 +19,13 @@
 <Header />
 
 <main>
-  <p>
-    Expedita minima quasi est dolor tempore. Reiciendis asperiores consequatur
-    ratione temporibus et. Ratione quae ut omnis. Officiis occaecati dignissimos
-    vel magnam maxime ut et et. Aliquid perspiciatis dolorem quaerat fugiat
-    nisi. Ut dolor esse.
-  </p>
+  <Tabs {tabs} {activeTab} on:changeTab={changeTab} />
 
+  {#if activeTab === tabs[0]}
+    <p>Poll list goes here</p>
+  {:else if activeTab === tabs[1]}
+    <p>New poll component goes here</p>
+  {/if}
 </main>
 
 <Footer />

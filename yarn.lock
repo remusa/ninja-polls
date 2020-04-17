@@ -1827,7 +1827,7 @@ svelte@^3.20.1:
   resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.20.1.tgz#8417fcd883a2f534b642a0737368272e651cf3ac"
   integrity sha512-m/dw52BZf+p6KYnyKLErIcGalu4pwJrQbUM7VZriRw6ZlJj1qMAZsLcIWzEB3I0hhdJwkKb7LrrvUIeqmbO92Q==
 
-svelvet@^0.4.0:
+svelvet@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/svelvet/-/svelvet-0.4.1.tgz#5e642c6f20550fea9069256696c1bd55f86ee891"
   integrity sha512-3KIenwq+5Tu6AqEPqq2duLal0AonW9wiHCdOP4aV5Le0gAzIr3Xs9BjRu+5FVOn/V/F20E/FWXC+nSr9gXTJww==

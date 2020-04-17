@@ -10,6 +10,6 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
-    "svelvet": "^0.4.0"
+    "svelvet": "^0.4.1"
   }
 }
