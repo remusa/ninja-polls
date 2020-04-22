@@ -1,12 +1,15 @@
 <script>
+  import { createEventDispatcher } from 'svelte'
   import Button from '../shared/Button'
 
-  let fields = {
+  const dispatch = createEventDispatcher()
+
+  const fields = {
     question: "",
     answerA: "",
     answerB: "",
   }
-  let errors = {
+  const errors = {
     question: "",
     answerA: "",
     answerB: "",
@@ -38,7 +41,8 @@
     }
 
     if (valid) {
-      console.log(`${valid}`)
+      let poll = {...fields, votesA: 0, votesB: 0, id: Math.random()}
+      dispatch('addPoll', poll)
     }
   }
 </script>
