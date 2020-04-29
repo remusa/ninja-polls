@@ -4,16 +4,6 @@
   export let polls = []
 </script>
 
-<style>
-  .poll-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
-    width: 600px;
-    margin: 0 auto;
-  }
-</style>
-
-
 <div class="poll-list">
   {#each polls as poll (poll.id)}
     <div>
@@ -21,3 +11,11 @@
     </div>
   {/each}
 </div>
+
+<style>
+  .poll-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+</style>
