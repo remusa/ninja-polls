@@ -33,6 +33,21 @@
     polls = [...polls, e.detail]
     activeTab = tabs[0]
   }
+
+  const onVote = e => {
+    const { option, id } = e.detail
+    const copiedPolls = [...polls]
+    const upvotedPoll = copiedPolls.find(poll => poll.id === id)
+
+    if (option.toLowerCase() === 'a') {
+      upvotedPoll.votesA++
+    }
+    else if (option.toLowerCase() === 'b') {
+      upvotedPoll.votesB++
+    }
+
+    polls = copiedPolls
+  }
 </script>
 
 <Header />
@@ -41,7 +56,7 @@
   <Tabs {tabs} {activeTab} on:changeTab={changeTab} />
 
   {#if activeTab === tabs[0]}
-    <PollList {polls} />
+    <PollList {polls} on:vote={onVote} />
   {:else if activeTab === tabs[1]}
     <CreatePollForm on:addPoll={onAdd} />
   {/if}
