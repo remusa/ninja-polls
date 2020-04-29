@@ -5,10 +5,10 @@
   import PollList from "/components/PollList"
   import Tabs from "/shared/Tabs"
 
-  const tabs = ["Current Polls", "Add New Poll"];
-  let activeTab = tabs[0];
+  const tabs = ["Current Polls", "Add New Poll"]
+  let activeTab = tabs[0]
 
-  const changeTab = e => (activeTab = e.detail);
+  const changeTab = e => activeTab = e.detail
 
   const onAdd = e => {
     polls = [...polls, e.detail]

@@ -1,10 +1,10 @@
 <script>
-  import { createEventDispatcher } from "svelte";
+  import { createEventDispatcher } from "svelte"
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher()
 
-  export let tabs = [];
-  export let activeTab = "";
+  export let tabs = []
+  export let activeTab = ""
 </script>
 
 <style>

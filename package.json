@@ -11,5 +11,18 @@
   "devDependencies": {
     "cross-env": "^7.0.2",
     "svelvet": "^0.4.1"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "plugins": [
+      "prettier-plugin-svelte"
+    ],
+    "svelteSortOrder": "scripts-markup-styles",
+    "svelteStrictMode": true,
+    "svelteBracketNewLine": true,
+    "svelteAllowShorthand": false
   }
 }
