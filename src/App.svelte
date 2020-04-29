@@ -11,24 +11,24 @@
   const changeTab = e => activeTab = e.detail
 
   const onAdd = e => {
-    polls = [...polls, e.detail]
+    // polls = [...polls, e.detail]
     activeTab = tabs[0]
   }
 
-  const onVote = e => {
-    const { option, id } = e.detail
-    const copiedPolls = [...polls]
-    const upvotedPoll = copiedPolls.find(poll => poll.id === id)
+  // const onVote = e => {
+    // const { option, id } = e.detail
+    // const copiedPolls = [...polls]
+    // const upvotedPoll = copiedPolls.find(poll => poll.id === id)
 
-    if (option.toLowerCase() === 'a') {
-      upvotedPoll.votesA++
-    }
-    else if (option.toLowerCase() === 'b') {
-      upvotedPoll.votesB++
-    }
+    // if (option.toLowerCase() === 'a') {
+    //   upvotedPoll.votesA++
+    // }
+    // else if (option.toLowerCase() === 'b') {
+    //   upvotedPoll.votesB++
+    // }
 
-    polls = copiedPolls
-  }
+    // polls = copiedPolls
+  // }
 </script>
 
 <Header />
@@ -37,9 +37,10 @@
   <Tabs {tabs} {activeTab} on:changeTab={changeTab} />
 
   {#if activeTab === tabs[0]}
-    <PollList on:vote={onVote} />
+    <!-- <PollList on:vote={onVote} /> -->
+    <PollList />
   {:else if activeTab === tabs[1]}
-    <CreatePollForm on:addPoll={onAdd} />
+    <CreatePollForm on:add={onAdd} />
   {/if}
 </main>
 

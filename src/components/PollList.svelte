@@ -18,7 +18,8 @@
   <!-- {#each polls as poll (poll.id)} -->
   {#each $PollStore as poll (poll.id)}
     <div>
-      <PollDetails {poll} on:vote />
+      <!-- <PollDetails {poll} on:vote /> -->
+      <PollDetails {poll} />
     </div>
   {/each}
 </div>
