@@ -25,7 +25,7 @@
 </div>
 
 <style>
-  .poll-list{
+  .poll-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
