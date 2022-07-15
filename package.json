@@ -6,7 +6,7 @@
     "build": "cross-env NODE_ENV=production svelvet"
   },
   "dependencies": {
-    "svelte": "^3.22.2"
+    "svelte": "^3.49.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
